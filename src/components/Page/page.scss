@@ -1,0 +1,53 @@
+.rightpage {
+    background: url("../../assets/page.png");
+}
+
+.rightpage::before {
+    top: -20px;
+    right: -20px;
+    position: absolute;
+    display: inline-block;
+    z-index: -5;
+    width: 410px;
+    height: 450px; 
+    content: '';
+    background: url("../../assets/rightpagex.png");
+    background-size: cover;
+}
+
+.leftpage {
+    background: url("../../assets/page.png");
+}
+
+.leftpage::before {
+    top: -20px;
+    right: 0px;
+    position: absolute;
+    display: inline-block;
+    z-index: -5;
+    width: 410px;
+    height: 450px; 
+    content: '';
+    background: url("../../assets/leftpagex.png");
+    background-size: cover;
+}
+
+
+.page {
+    position: relative;
+    padding-top: 50px;
+    
+    &__story {
+        border-radius: 5px;
+    }
+
+    &__number {
+        position: absolute;
+        bottom:-8px;
+        left: 191px;
+    }
+
+    &__frame {
+        padding-top: 25px;
+    }
+}

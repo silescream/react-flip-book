@@ -1,0 +1,12 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: url("../../react-flip-book/src/assets/background.png");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+
