@@ -1,13 +1,16 @@
 
 .page-cover {
     position: relative;
+
+    .book-cover {
+        position: absolute;
+        top: -32px;
+        left: -7px;
+        width: 480px;
+        height: 615px;
+     }
+     
 }
 
 
- .book-cover {
-    position: absolute;
-    top: -29px;
-    left: -4px;
-    width: 410px;
-    height: 470px;
- }
+ 

@@ -4,13 +4,14 @@ import story from "../../assets/story1.png";
 import frame from "../../assets/frame.png";
 import rightpagex from "../../assets/rightpagex.png";
 
-export const Page = React.forwardRef((props, ref) => {
-  const pageClass = props.number % 2 === 0 ? "rightpage" : "leftpage" ;
+export const Page = React.forwardRef(({img, text, number}, ref) => {
+  const pageClass = number % 2 === 0 ? "rightpage" : "leftpage" ;
   return (
       <div className={pageClass} id="page" ref={ref}>
         <div className="page">
-          <img сlassname="page__story" src={props.story} alt="story1" />
-          <p className="page__number">{props.number}</p>
+          <img сlassName="page__story" src={img} alt="story1" />
+          <p className= "page__text">{text}</p>
+          <p className="page__number">{number}</p>
           <img className="page__frame" src={frame} alt="page-frame" />
         </div>
       </div>

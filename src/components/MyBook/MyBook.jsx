@@ -21,18 +21,22 @@ export function MyBook() {
   };
 
   const onPage = (e) => {
-    setBookPage(e.data);
+    if(e.data === 0) {
+      setBookPage(e.data);
+    } else if (e.data === 1) {
+      setBookPage(e.data);
+    }
   };
 
-
+console.log("render");
 
   return (
-    <>
+    <div className="container">
       <div className="flipbook">
         <HTMLFlipBook
           className="book"
-          width={390}
-          height={415}
+          width={435}
+          height={550}
           showCover={true}
           maxShadowOpacity={0}
           ref={bookRef}
@@ -40,7 +44,7 @@ export function MyBook() {
         >
           <PageCover number="0"></PageCover>
           {stories.map((story, index) => (
-            <Page key={index} number={index + 1} story={story} />
+            <Page key={index} number={index + 1} img={story.img} text={story.text} />
           ))}
         </HTMLFlipBook>
       </div>
@@ -49,7 +53,6 @@ export function MyBook() {
            <img src={openarrow} alt="open-book-arrow" />
         </button>
       ) : (
-        <div className="container">
           <div className="button-container">
             <button className="previous-button" type="button" onClick={prevButtonClick}>
               <img src={openarrow} alt="previous-arrow" />
@@ -58,18 +61,7 @@ export function MyBook() {
             <img src={nextarrow} alt="next-arrow" />
             </button>
           </div>
-        </div>
       )}
-     {/*  <div className="container">
-        <div>
-          <button type="button" onClick={prevButtonClick}>
-            Previous page
-          </button>
-          <button type="button" onClick={nextButtonClick}>
-            Next page
-          </button>
-        </div>
-      </div> */}
-    </>
+    </div>
   );
 }

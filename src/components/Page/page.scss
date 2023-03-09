@@ -1,22 +1,25 @@
+@import "../../style/fonts";
+
+
 .rightpage {
     background: url("../../assets/page.png");
 }
 
 .rightpage::before {
     top: -20px;
-    right: -20px;
+    right: -29px;
     position: absolute;
     display: inline-block;
     z-index: -5;
-    width: 410px;
-    height: 450px; 
+    width: 465px;
+    height: 595px; 
     content: '';
-    background: url("../../assets/rightpagex.png");
+    background: url("../../assets/rptestR.png");
     background-size: cover;
 }
 
 .leftpage {
-    background: url("../../assets/page.png");
+    background: url("../../assets/lptestR.png");
 }
 
 .leftpage::before {
@@ -25,10 +28,10 @@
     position: absolute;
     display: inline-block;
     z-index: -5;
-    width: 410px;
-    height: 450px; 
+    width: 465px;
+    height: 595px; 
     content: '';
-    background: url("../../assets/leftpagex.png");
+    background: url("../../assets/leftpageok.png");
     background-size: cover;
 }
 
@@ -36,6 +39,11 @@
 .page {
     position: relative;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    
     
     &__story {
         border-radius: 5px;
@@ -44,12 +52,23 @@
     }
 
     &__number {
+        font-family: "Mariupol"; 
+        font-weight: 400;
         position: absolute;
-        bottom:-8px;
-        left: 191px;
+        bottom:-10px;
+        left: 213px;
     }
 
     &__frame {
         padding-top: 25px;
     }
+
+    &__text {
+        font-family: "Mariupol";
+        font-weight: 400;
+        font-size: 16px;
+        width: 380px;
+        height: 75px;
+    }
+
 }

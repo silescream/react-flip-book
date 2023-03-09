@@ -1,3 +1,12 @@
+.container {
+    position: relative;
+    max-width: 1288px;
+    min-height: 768px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
 .book {
     text-align: center;
@@ -7,14 +16,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 780px;
-    height: 415px;
+    width: 870px;
+    height: 550px;
 }
 
 .open-button {
     position: absolute;
     top: 50%;
-    right: 490px;
+    right: 0px;
     transform: translateY(-50%);
     border: none;
     outline: none;
@@ -25,10 +34,11 @@
   }
 
   .previous-button {
+    width:48px;
+    height: 48px;
     position: absolute;
-    bottom: 100px;
-    right: 381px;
-    transform: translateY(-50%);
+    top: -5px;
+    left: -13px;
     border: none;
     outline: none;
     font-size: 0;
@@ -38,10 +48,11 @@
   }
 
   .next-button {
+    width:48px;
+    height: 48px;
     position: absolute;
-    bottom: 90px;
-    right: 317px;
-    transform: translateY(-50%);
+    top: 0px;
+    right: 5px;
     border: none;
     outline: none;
     font-size: 0;
@@ -55,14 +66,11 @@
     justify-content: space-between;
     align-items: center;
     position: absolute;
-    bottom: 20px;
-    width: 100%;
+    bottom: 10px;
+    width: 130px;
+    height: 50px;
   }
   
-  .container {
-    position: relative;
-    height: 100%;
-  }
   
   
   

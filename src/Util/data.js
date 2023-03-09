@@ -1,27 +1,50 @@
-import story1 from "../assets/story1.png";
-import story2 from "../assets/story2.png";
-import story3 from "../assets/story3.png";
-import story4 from "../assets/story4.png";
-import story5 from "../assets/story5.png";
-import story6 from "../assets/story6.png";
-import story7 from "../assets/story7.png";
-import story8 from "../assets/story8.png";
-import story9 from "../assets/story9.png";
-import story10 from "../assets/story10.png";
-import story11 from "../assets/story11.png";
-import story12 from "../assets/story12.png";
+import aStory1 from "../assets/aStory1.png";
+import aStory2 from "../assets/aStory2.png";
+import aStory3 from "../assets/aStory3.png";
+import aStory4 from "../assets/aStory4.png";
+import aStory5 from "../assets/aStory5.png";
+import aStory6 from "../assets/aStory6.png";
+import aStory7 from "../assets/aStory7.png";
+import aStory8 from "../assets/aStory8.png";
 
 export const stories = [
-  story1,
-  story2,
-  story3,
-  story4,
-  story5,
-  story6,
-  story7,
-  story8,
-  story8,
-  story10,
-  story11,
-  story12,
+  {
+    img: aStory1,
+    text: "Эта история берет свое начало в послевоенное время, когда мир пытался справиться с последствиями разрухи.",
+  },
+
+  {
+    img: aStory2,
+    text: "Мы с братом не могли сидеть сложа руки, веря в то, что способны помочь себе и окружающим пережить это время. ",
+  },
+
+  {
+    img: aStory3,
+    text: "Собрав на последние средства нашего селения экспедицию, мы отправились к берегам Южной Америки, где за легендами...",
+  },
+
+  {
+    img: aStory4,
+    text: " Но нашим мечтам было не суждено сбыться. Судно попало в сильный шторм и было полностью разрушено, а мы вынесены волнами на необитаемый остров.",
+  },
+
+  {
+    img: aStory5,
+    text: "7 долгих дней блужданий по острову обессилили нас. Лишь смелость сердец и вера в удачу вела вперед.",
+  },
+
+  {
+    img: aStory6,
+    text: "В тот день, когда отчаяние начало брать верх, впереди замаячил свет костра в непроходимых джунглях. Это казалось чудом. Им оно и было. ",
+  },
+
+  {
+    img: aStory7,
+    text: "У костра сидела девушка, красота которой затмевала лунный свет и заставляла сердце биться чаще.",
+  },
+
+  {
+    img: aStory8,
+    text: "Так начинается наша история. Продолжим ее вместе?",
+  },
 ];
