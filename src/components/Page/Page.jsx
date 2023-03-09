@@ -9,7 +9,7 @@ export const Page = React.forwardRef((props, ref) => {
   return (
       <div className={pageClass} id="page" ref={ref}>
         <div className="page">
-          <img сlassname="page__story" src={story} alt="story1" />
+          <img сlassname="page__story" src={props.story} alt="story1" />
           <p className="page__number">{props.number}</p>
           <img className="page__frame" src={frame} alt="page-frame" />
         </div>

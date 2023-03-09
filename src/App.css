@@ -2,7 +2,7 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  background: url("../../react-flip-book/src/assets/background.png");
+  background: url("../../react-flip-book/src/assets/background.svg");
   background-size: cover;
   justify-content: center;
   align-items: center;
