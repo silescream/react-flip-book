@@ -23,6 +23,32 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+  .previous-button {
+    position: absolute;
+    bottom: 100px;
+    right: 381px;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .next-button {
+    position: absolute;
+    bottom: 90px;
+    right: 317px;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+  }
   
   .button-container {
     display: flex;

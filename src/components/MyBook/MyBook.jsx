@@ -2,6 +2,7 @@ import HTMLFlipBook from "react-pageflip";
 import { Page } from "../Page";
 import { PageCover } from "../PageCover/PageCover";
 import openarrow from "../../assets/oppenarrow.svg";
+import nextarrow from "../../assets/rightarrow.svg"
 import { stories } from "../../Util/data";
 import { useState, useEffect, useRef } from "react";
 
@@ -50,11 +51,11 @@ export function MyBook() {
       ) : (
         <div className="container">
           <div className="button-container">
-            <button type="button" onClick={prevButtonClick}>
-              Previous page
+            <button className="previous-button" type="button" onClick={prevButtonClick}>
+              <img src={openarrow} alt="previous-arrow" />
             </button>
-            <button type="button" onClick={nextButtonClick}>
-              Next page
+            <button className="next-button" type="button" onClick={nextButtonClick}>
+            <img src={nextarrow} alt="next-arrow" />
             </button>
           </div>
         </div>
