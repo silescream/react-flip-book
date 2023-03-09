@@ -1,16 +1,37 @@
+@import "../../style/mediamixins";
 
 .page-cover {
-    position: relative;
+  position: relative;
 
-    .book-cover {
-        position: absolute;
-        top: -32px;
+  .book-cover {
+    position: absolute;
+    top: -32px;
+    left: -7px;
+    width: 480px;
+    height: 615px;
+
+    @include for-small-desktop {
+      width: 395px;
+      height: 500px;
+    }
+
+    @include for-tablet {
+      width: 330px;
+      height: 420px;
+      top: -15px;
+    }
+
+    @include for-large-phone {
+        width: 370px;
+        height: 490px;
+        top: -15px;
+    }
+
+    @include for-small-phone {
+        width: 280px;
+        height: 390px;
+        top: -15px;
         left: -7px;
-        width: 480px;
-        height: 615px;
-     }
-     
+    }
+  }
 }
-
-
- 

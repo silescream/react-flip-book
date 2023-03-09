@@ -1,78 +1,137 @@
+@import "../../style/mediamixins";
+
 .container {
-    position: relative;
-    max-width: 1288px;
-    min-height: 768px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: relative;
+  max-width: 1288px;
+  min-height: 768px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include for-small-desktop {
+    max-width: 880px;
+    min-height: 668px;
   }
 
+  @include for-tablet {
+    max-width: 680px;
+    min-height: 500px;
+  }
+
+  @include for-large-phone {
+    max-width: 412px;
+    min-height: 350px;
+  }
+
+  @include for-small-phone {
+    max-width: 100%;
+  }
+}
+
 .book {
-    text-align: center;
+  text-align: center;
 }
 
 .flipbook {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 870px;
-    height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 870px;
+  height: 560px;
+
+  @include for-small-desktop {
+    width: 700px;
+    height: 490px;
+  }
+
+  @include for-tablet {
+    width: 600px;
+    height: 450px;
+  }
+
+  @include for-large-phone {
+    width: 360px;
+    height: 420px;
+  }
+
+  @include for-small-phone {
+    width: 270px;
+    height: 390px;
+  }
 }
 
 .open-button {
-    position: absolute;
-    top: 50%;
-    right: 0px;
-    transform: translateY(-50%);
-    border: none;
-    outline: none;
-    font-size: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  border: none;
+  outline: none;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+
+  @include for-small-desktop {
+    width: 15px;
+    height: 15px;
+    right: 44px;
+    top: 45%;
   }
 
-  .previous-button {
-    width:48px;
-    height: 48px;
-    position: absolute;
-    top: -5px;
-    left: -13px;
-    border: none;
-    outline: none;
-    font-size: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 5px;
+  @include for-tablet {
+    right: 44px;
+    top: 43%;
   }
 
-  .next-button {
-    width:48px;
-    height: 48px;
-    position: absolute;
-    top: 0px;
-    right: 5px;
-    border: none;
-    outline: none;
-    font-size: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border-radius: 5px;
+  @include for-large-phone {
+    top: 40%;
   }
-  
-  .button-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    bottom: 10px;
-    width: 130px;
-    height: 50px;
+}
+
+.previous-button {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: -5px;
+  left: -13px;
+  border: none;
+  outline: none;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.next-button {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  border: none;
+  outline: none;
+  font-size: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  width: 130px;
+  height: 50px;
+
+  @include for-tablet {
+    bottom: -12px;
   }
-  
-  
-  
-  
-  
-  
+
+  @include for-large-phone {
+    bottom: -100px;
+  }
+}

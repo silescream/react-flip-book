@@ -1,74 +1,177 @@
 @import "../../style/fonts";
-
+@import "../../style/mediamixins";
 
 .rightpage {
-    background: url("../../assets/page.png");
+  background: url("../../assets/page.png");
+  @include for-large-phone {
+    background-size: cover;
+  }
 }
 
 .rightpage::before {
-    top: -20px;
-    right: -29px;
-    position: absolute;
-    display: inline-block;
-    z-index: -5;
-    width: 465px;
-    height: 595px; 
-    content: '';
-    background: url("../../assets/rptestR.png");
-    background-size: cover;
+  top: -20px;
+  right: -29px;
+  position: absolute;
+  display: inline-block;
+  z-index: -5;
+  width: 465px;
+  height: 595px;
+  content: "";
+  background: url("../../assets/rptestR.png");
+  background-size: cover;
+
+  @include for-small-desktop {
+    width: 380px;
+    height: 490px;
+  }
+
+  @include for-tablet {
+    width: 320px;
+    height: 405px;
+    top: -11px;
+    right: -20px;
+  }
+
+  @include for-large-phone {
+    display: none;
+  }
 }
 
 .leftpage {
-    background: url("../../assets/lptestR.png");
+  background: url("../../assets/page.png");
+  @include for-large-phone {
+    background-size: cover;
+  }
 }
 
 .leftpage::before {
-    top: -20px;
-    right: 0px;
-    position: absolute;
-    display: inline-block;
-    z-index: -5;
-    width: 465px;
-    height: 595px; 
-    content: '';
-    background: url("../../assets/leftpageok.png");
-    background-size: cover;
+  top: -20px;
+  right: 0px;
+  position: absolute;
+  display: inline-block;
+  z-index: -5;
+  width: 465px;
+  height: 595px;
+  content: "";
+  background: url("../../assets/leftpageok.png");
+  background-size: cover;
+
+  @include for-small-desktop {
+    width: 380px;
+    height: 490px;
+  }
+
+  @include for-tablet {
+    width: 320px;
+    height: 405px;
+    top: -11px;
+    right: -3px;
+  }
+
+  @include for-large-phone {
+    display: none;
+  }
 }
 
-
 .page {
-    position: relative;
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+  position: relative;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  @include for-large-phone {
+    height: 390px;
+  }
+
+  @include for-small-phone {
+    height: 340px;
+    padding-top: 25px;
+  }
+
+  &__story {
+    border-radius: 5px;
+    width: 401px;
+    height: 329px;
+
+    @include for-small-desktop {
+      width: 270px;
+      height: 240px;
+    }
+
+    @include for-tablet {
+        width: 240px;
+        height: 210px;
+    }
+
+    @include for-large-phone {
+        width: 320px;
+        height: 260px;
+    }
+
+    @include for-small-phone {
+        width: 220px;
+        height: 200px;
+    }
+  }
+
+  &__number {
+    font-family: "Mariupol";
+    font-weight: 400;
+    position: absolute;
+    bottom: -10px;
+    left: 213px;
+    width: 10px;
+
+    @include for-small-desktop {
+        bottom: -10px;
+        left: 170px;
+    }
+
+    @include for-tablet {
+        left: 144px;
+    }
+
+    @include for-large-phone {
+        left: 174px;
+    }
+
+    @include for-small-phone {
+        left: 143px;
+    }
+
     
-    
-    &__story {
-        border-radius: 5px;
-        width: 200px;
-        height: 250px;
+  }
+
+  &__frame {
+    padding-top: 25px;
+    @include for-large-phone {
+        justify-self: flex-end;
+    }
+  }
+
+  &__text {
+    font-family: "Mariupol";
+    font-weight: 400;
+    font-size: 16px;
+    width: 380px;
+    height: 75px;
+
+    @include for-small-desktop {
+        width: 250px;
+        height: 50px
     }
 
-    &__number {
-        font-family: "Mariupol"; 
-        font-weight: 400;
-        position: absolute;
-        bottom:-10px;
-        left: 213px;
+    @include for-tablet {
+        width: 230px;
+        height: 45px;
+        font-size: 14px;
     }
 
-    &__frame {
-        padding-top: 25px;
+    @include for-small-phone {
+        width: 190px;
+        height: 35px;
+        font-size: 12px;
     }
-
-    &__text {
-        font-family: "Mariupol";
-        font-weight: 400;
-        font-size: 16px;
-        width: 380px;
-        height: 75px;
-    }
-
+  }
 }

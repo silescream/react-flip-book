@@ -1,3 +1,5 @@
+@import "../src/style/mediamixins";
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -6,6 +8,12 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
+
+  @include for-large-phone {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 }
 
 

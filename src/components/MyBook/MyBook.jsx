@@ -4,13 +4,15 @@ import { PageCover } from "../PageCover/PageCover";
 import openarrow from "../../assets/oppenarrow.svg";
 import nextarrow from "../../assets/rightarrow.svg"
 import { stories } from "../../Util/data";
-import { useState, useEffect, useRef } from "react";
+import { useState, useRef} from "react";
 
 import "./book.scss";
 
 export function MyBook() {
   const bookRef = useRef(null);
   const [bookPage, setBookPage] = useState(0);
+
+
 
   const nextButtonClick = () => {
     bookRef.current.pageFlip().flipNext();
@@ -28,7 +30,6 @@ export function MyBook() {
     }
   };
 
-console.log("render");
 
   return (
     <div className="container">
@@ -36,7 +37,12 @@ console.log("render");
         <HTMLFlipBook
           className="book"
           width={435}
-          height={550}
+          height={560}
+          minWidth={295}
+          maxWidth={435}
+          minHeight={390}
+          maxHeight={560}
+          size={"stretch"}
           showCover={true}
           maxShadowOpacity={0}
           ref={bookRef}
