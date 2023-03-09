@@ -61,17 +61,20 @@
   }
 }
 
-.open-button {
+.button {
   position: absolute;
-  top: 50%;
-  right: 0px;
-  transform: translateY(-50%);
   border: none;
   outline: none;
   font-size: 0;
   background-color: transparent;
   cursor: pointer;
-  border-radius: 5px;
+}
+
+.open-button {
+  @extend .button;
+  top: 48%;
+  right: 0px;
+  transform: translateY(-50%);
 
   @include for-small-desktop {
     width: 15px;
@@ -91,31 +94,19 @@
 }
 
 .previous-button {
+  @extend .button;
   width: 48px;
   height: 48px;
-  position: absolute;
   top: -5px;
   left: -13px;
-  border: none;
-  outline: none;
-  font-size: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .next-button {
+  @extend.button;
   width: 48px;
   height: 48px;
-  position: absolute;
   top: 0px;
   right: 5px;
-  border: none;
-  outline: none;
-  font-size: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border-radius: 5px;
 }
 
 .button-container {
@@ -138,7 +129,6 @@
   @include for-small-phone {
     bottom: -45px;
   }
-
 }
 
 .volume {
@@ -154,5 +144,4 @@
   @include for-small-phone {
     bottom: -34px;
   }
-
 }

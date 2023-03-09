@@ -1,13 +1,14 @@
 import HTMLFlipBook from "react-pageflip";
+import { useState, useRef } from "react";
 import { Page } from "../Page";
-import { PageCover } from "../PageCover/PageCover";
+import { PageCover } from "../PageCover"
+
+import { stories } from "../../Util/data";
 import volume from "../../assets/volume.png";
 import openarrow from "../../assets/oppenarrow.svg";
 import nextarrow from "../../assets/rightarrow.svg";
-import { stories } from "../../Util/data";
-import { useState, useRef } from "react";
 
-import "./book.scss";
+import "./myBook.scss";
 
 export function MyBook() {
   const bookRef = useRef(null);

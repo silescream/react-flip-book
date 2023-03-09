@@ -1,7 +1,6 @@
-import './App.scss';
+import "./App.scss";
 
-import { MyBook } from './components/MyBook'
-
+import { MyBook } from "./components/MyBook";
 
 function App() {
   return (

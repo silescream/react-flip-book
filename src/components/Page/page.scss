@@ -100,18 +100,18 @@
     }
 
     @include for-tablet {
-        width: 240px;
-        height: 210px;
+      width: 240px;
+      height: 210px;
     }
 
     @include for-large-phone {
-        width: 320px;
-        height: 260px;
+      width: 320px;
+      height: 260px;
     }
 
     @include for-small-phone {
-        width: 220px;
-        height: 200px;
+      width: 220px;
+      height: 200px;
     }
   }
 
@@ -124,29 +124,27 @@
     width: 10px;
 
     @include for-small-desktop {
-        bottom: -10px;
-        left: 170px;
+      bottom: -10px;
+      left: 170px;
     }
 
     @include for-tablet {
-        left: 144px;
+      left: 144px;
     }
 
     @include for-large-phone {
-        left: 174px;
+      left: 174px;
     }
 
     @include for-small-phone {
-        left: 130px;
+      left: 130px;
     }
-
-    
   }
 
   &__frame {
     padding-top: 25px;
     @include for-large-phone {
-        justify-self: flex-end;
+      justify-self: flex-end;
     }
   }
 
@@ -158,20 +156,20 @@
     height: 75px;
 
     @include for-small-desktop {
-        width: 250px;
-        height: 50px
+      width: 250px;
+      height: 50px;
     }
 
     @include for-tablet {
-        width: 230px;
-        height: 45px;
-        font-size: 14px;
+      width: 230px;
+      height: 45px;
+      font-size: 14px;
     }
 
     @include for-small-phone {
-        width: 190px;
-        height: 35px;
-        font-size: 11px;
+      width: 190px;
+      height: 35px;
+      font-size: 11px;
     }
   }
 }

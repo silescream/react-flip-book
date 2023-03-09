@@ -1,1 +1,1 @@
-export { MyBook } from './MyBook'
+export { MyBook } from "./MyBook";
