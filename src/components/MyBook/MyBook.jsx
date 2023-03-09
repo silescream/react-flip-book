@@ -1,23 +1,29 @@
 import HTMLFlipBook from "react-pageflip";
 import { Page } from "../Page";
 import { PageCover } from "../PageCover/PageCover";
+import openarrow from "../../assets/oppenarrow.svg";
 import { stories } from "../../Util/data";
 import { useState, useEffect, useRef } from "react";
 
 import "./book.scss";
 
 export function MyBook() {
-  const bookRef = useRef(null)
-  const [page, setPage] = useState(0);
-  const [totalPage, setTotalPage] = useState(0);
+  const bookRef = useRef(null);
+  const [bookPage, setBookPage] = useState(0);
 
   const nextButtonClick = () => {
-    bookRef.current.pageFlip().flipNext()
-  }
+    bookRef.current.pageFlip().flipNext();
+  };
 
- const prevButtonClick = () => {
-    bookRef.current.pageFlip().flipPrev()
-  }
+  const prevButtonClick = () => {
+    bookRef.current.pageFlip().flipPrev();
+  };
+
+  const onPage = (e) => {
+    setBookPage(e.data);
+  };
+
+
 
   return (
     <>
@@ -27,8 +33,9 @@ export function MyBook() {
           width={390}
           height={415}
           showCover={true}
-          maxShadowOpacity={0.2}
+          maxShadowOpacity={0}
           ref={bookRef}
+          onFlip={onPage}
         >
           <PageCover number="0"></PageCover>
           {stories.map((story, index) => (
@@ -36,12 +43,28 @@ export function MyBook() {
           ))}
         </HTMLFlipBook>
       </div>
-{/*       <div className="container">
+      {bookPage === 0 ? (
+        <button className="open-button" onClick={nextButtonClick}>
+           <img src={openarrow} alt="open-book-arrow" />
+        </button>
+      ) : (
+        <div className="container">
+          <div className="button-container">
+            <button type="button" onClick={prevButtonClick}>
+              Previous page
+            </button>
+            <button type="button" onClick={nextButtonClick}>
+              Next page
+            </button>
+          </div>
+        </div>
+      )}
+     {/*  <div className="container">
         <div>
-          <button type="button" onClick={prevButtonClick} >
+          <button type="button" onClick={prevButtonClick}>
             Previous page
           </button>
-          <button type="button"  onClick={nextButtonClick}>
+          <button type="button" onClick={nextButtonClick}>
             Next page
           </button>
         </div>

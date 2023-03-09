@@ -11,3 +11,34 @@
     height: 415px;
 }
 
+.open-button {
+    position: absolute;
+    top: 50%;
+    right: 490px;
+    transform: translateY(-50%);
+    border: none;
+    outline: none;
+    font-size: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+  }
+  
+  .container {
+    position: relative;
+    height: 100%;
+  }
+  
+  
+  
+  
+  
