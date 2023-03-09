@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/react-flip-book/static/css/main.c4230db2.css",
+    "main.js": "/react-flip-book/static/js/main.ee9fc68e.js",
+    "static/media/page.png": "/react-flip-book/static/media/page.5aaa2049510792beddc8.png",
+    "static/media/rightpage.png": "/react-flip-book/static/media/rightpage.aaee08513fcc3be6883a.png",
+    "static/media/bookx.png": "/react-flip-book/static/media/bookx.b9c3254f1375386ecba2.png",
+    "static/media/leftpage.png": "/react-flip-book/static/media/leftpage.9e74f88d8415a4fd56d6.png",
+    "static/media/aStory3.png": "/react-flip-book/static/media/aStory3.8200577f181de848bdea.png",
+    "static/media/aStory1.png": "/react-flip-book/static/media/aStory1.61c7e97ed86987c75af5.png",
+    "static/media/aStory2.png": "/react-flip-book/static/media/aStory2.332d198dd09123e533e4.png",
+    "static/media/aStory4.png": "/react-flip-book/static/media/aStory4.d51e962fe7515ad419e8.png",
+    "static/media/aStory5.png": "/react-flip-book/static/media/aStory5.df47cb6d00b8f9a7abd6.png",
+    "static/media/aStory8.png": "/react-flip-book/static/media/aStory8.46e3406d7083f5473d5b.png",
+    "static/media/aStory6.png": "/react-flip-book/static/media/aStory6.c95f544f976642e39f62.png",
+    "static/media/aStory7.png": "/react-flip-book/static/media/aStory7.97fe2bbee9f71b869b4b.png",
+    "static/media/rightarrow.svg": "/react-flip-book/static/media/rightarrow.4f0eabe4e440f8df2624a618867d68e0.svg",
+    "static/media/oppenarrow.svg": "/react-flip-book/static/media/oppenarrow.43d70405ed32addd34337fae597b796c.svg",
+    "static/media/Mariupol-Regular.woff": "/react-flip-book/static/media/Mariupol-Regular.d883d4a101e1b21d4275.woff",
+    "static/media/background.svg": "/react-flip-book/static/media/background.334281bdec3529e31697.svg",
+    "index.html": "/react-flip-book/index.html",
+    "main.c4230db2.css.map": "/react-flip-book/static/css/main.c4230db2.css.map",
+    "main.ee9fc68e.js.map": "/react-flip-book/static/js/main.ee9fc68e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4230db2.css",
+    "static/js/main.ee9fc68e.js"
+  ]
+}
