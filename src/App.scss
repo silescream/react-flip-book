@@ -5,15 +5,12 @@
   height: 100vh;
   background: url("../../react-flip-book/src/assets/background.svg");
   background-size: cover;
-  justify-content: center;
-  align-items: center;
   overflow: hidden;
 
   @include for-large-phone {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-}
-}
+  }
 
-
+}

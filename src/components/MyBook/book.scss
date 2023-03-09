@@ -25,7 +25,7 @@
   }
 
   @include for-small-phone {
-    max-width: 100%;
+    max-width: 280px;
   }
 }
 
@@ -134,4 +134,25 @@
   @include for-large-phone {
     bottom: -100px;
   }
+
+  @include for-small-phone {
+    bottom: -45px;
+  }
+
+}
+
+.volume {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  cursor: pointer;
+
+  @include for-large-phone {
+    bottom: -89px;
+  }
+
+  @include for-small-phone {
+    bottom: -34px;
+  }
+
 }

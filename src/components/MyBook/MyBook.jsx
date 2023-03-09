@@ -1,18 +1,17 @@
 import HTMLFlipBook from "react-pageflip";
 import { Page } from "../Page";
 import { PageCover } from "../PageCover/PageCover";
+import volume from "../../assets/volume.png";
 import openarrow from "../../assets/oppenarrow.svg";
-import nextarrow from "../../assets/rightarrow.svg"
+import nextarrow from "../../assets/rightarrow.svg";
 import { stories } from "../../Util/data";
-import { useState, useRef} from "react";
+import { useState, useRef } from "react";
 
 import "./book.scss";
 
 export function MyBook() {
   const bookRef = useRef(null);
   const [bookPage, setBookPage] = useState(0);
-
-
 
   const nextButtonClick = () => {
     bookRef.current.pageFlip().flipNext();
@@ -23,13 +22,12 @@ export function MyBook() {
   };
 
   const onPage = (e) => {
-    if(e.data === 0) {
+    if (e.data === 0) {
       setBookPage(e.data);
     } else if (e.data === 1) {
       setBookPage(e.data);
     }
   };
-
 
   return (
     <div className="container">
@@ -38,9 +36,9 @@ export function MyBook() {
           className="book"
           width={435}
           height={560}
-          minWidth={295}
+          minWidth={270}
           maxWidth={435}
-          minHeight={390}
+          minHeight={350}
           maxHeight={560}
           size={"stretch"}
           showCover={true}
@@ -50,24 +48,38 @@ export function MyBook() {
         >
           <PageCover number="0"></PageCover>
           {stories.map((story, index) => (
-            <Page key={index} number={index + 1} img={story.img} text={story.text} />
+            <Page
+              key={index}
+              number={index + 1}
+              img={story.img}
+              text={story.text}
+            />
           ))}
         </HTMLFlipBook>
       </div>
       {bookPage === 0 ? (
         <button className="open-button" onClick={nextButtonClick}>
-           <img src={openarrow} alt="open-book-arrow" />
+          <img src={openarrow} alt="open-book-arrow" />
         </button>
       ) : (
-          <div className="button-container">
-            <button className="previous-button" type="button" onClick={prevButtonClick}>
-              <img src={openarrow} alt="previous-arrow" />
-            </button>
-            <button className="next-button" type="button" onClick={nextButtonClick}>
+        <div className="button-container">
+          <button
+            className="previous-button"
+            type="button"
+            onClick={prevButtonClick}
+          >
+            <img src={openarrow} alt="previous-arrow" />
+          </button>
+          <button
+            className="next-button"
+            type="button"
+            onClick={nextButtonClick}
+          >
             <img src={nextarrow} alt="next-arrow" />
-            </button>
-          </div>
+          </button>
+        </div>
       )}
+      <img className="volume" src={volume} alt="volume" />
     </div>
   );
 }

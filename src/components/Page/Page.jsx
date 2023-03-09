@@ -1,8 +1,6 @@
 import React from "react";
 import "./page.scss";
-import story from "../../assets/story1.png";
 import frame from "../../assets/frame.png";
-import rightpagex from "../../assets/rightpagex.png";
 
 export const Page = React.forwardRef(({img, text, number}, ref) => {
   const pageClass = number % 2 === 0 ? "rightpage" : "leftpage" ;
