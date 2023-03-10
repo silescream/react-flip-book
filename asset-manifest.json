@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react-flip-book/static/css/main.c4230db2.css",
-    "main.js": "/react-flip-book/static/js/main.ee9fc68e.js",
+    "main.css": "/react-flip-book/static/css/main.7e4a5c11.css",
+    "main.js": "/react-flip-book/static/js/main.68d208a4.js",
     "static/media/page.png": "/react-flip-book/static/media/page.5aaa2049510792beddc8.png",
     "static/media/rightpage.png": "/react-flip-book/static/media/rightpage.aaee08513fcc3be6883a.png",
     "static/media/bookx.png": "/react-flip-book/static/media/bookx.b9c3254f1375386ecba2.png",
@@ -19,11 +19,11 @@
     "static/media/Mariupol-Regular.woff": "/react-flip-book/static/media/Mariupol-Regular.d883d4a101e1b21d4275.woff",
     "static/media/background.svg": "/react-flip-book/static/media/background.334281bdec3529e31697.svg",
     "index.html": "/react-flip-book/index.html",
-    "main.c4230db2.css.map": "/react-flip-book/static/css/main.c4230db2.css.map",
-    "main.ee9fc68e.js.map": "/react-flip-book/static/js/main.ee9fc68e.js.map"
+    "main.7e4a5c11.css.map": "/react-flip-book/static/css/main.7e4a5c11.css.map",
+    "main.68d208a4.js.map": "/react-flip-book/static/js/main.68d208a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.c4230db2.css",
-    "static/js/main.ee9fc68e.js"
+    "static/css/main.7e4a5c11.css",
+    "static/js/main.68d208a4.js"
   ]
 }
