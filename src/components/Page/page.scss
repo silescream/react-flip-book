@@ -80,6 +80,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  @include for-tablet {
+    padding-top:35px;
+  }
+
   @include for-large-phone {
     height: 390px;
   }

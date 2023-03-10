@@ -36,7 +36,7 @@ export function MyBook() {
         <HTMLFlipBook
           className="book"
           width={435}
-          height={560}
+          height={550}
           minWidth={270}
           maxWidth={435}
           minHeight={350}
